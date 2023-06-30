@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Contact Page</title>
+    <script src="script.js">
+
+    </script>
+
+    <style>
+        /* Paste the CSS code here */
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: antiquewhite;
+            background-size: cover;
+            background-position: center;
+
+            color: #0b0b0b;
+
+        }
+
+        .containers {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            max-width: 450px;
+            background: white;
+            padding: 20px 30px;
+            box-shadow: 0px 5px 11px rgba(0, 0, 0, 1);
+        }
+
+        .container {
+            padding: 0px;
+        }
+
+        button.btn.btn-lg.btn-success.btn-block {
+            background-color: #d9dee3;
+            border: none;
+        }
+        
+        h1 {
+            color: #080808;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        function redirectToSample() {
+            window.location.href = "index1.html";
+        }
+    </script>
+    <div class="containers">
+        <div class="row">
+            <div style="width: 60%; margin: 50px auto">
+                <h1 style="text-align: center">Contact Us</h1>
+
+                <form>
+                    <div class="form-group">
+                        <label for="name">
+                            <h3>Name </h3>
+                        </label>
+                        <input type="text" name="UserName" id="name" class="form-control" autofocus required
+                            style="background-color: white;" />
+
+
+                    </div>
+                    <div class="form-group">
+                        <label for="email">
+                            <h3>E-mail</h3>
+                        </label>
+                        <input type="email" name="email" id="email" class="form-control" autofocus required
+                            style="background-color: white;" />
+                    </div>
+                    <div class="form-group">
+                        <label for="number">
+                            <h3>Phone number </h3>
+                        </label>
+                        <input type="text" name="number" id="number" class="form-control" required
+                            style="background-color: white;" />
+                        <br>
+                        <h5>
+                            Captcha not visible/Refresh
+                            <img src="refresh.jpg" width="40px" onclick="cap()" />
+                        </h5>
+                    </div>
+                    <label>
+                        <h3>Enter Captcha:</h3>
+                    </label>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" readonly id="capt" />
+                        </div>
+                        <div class="form-group col-md-6">
+                            <input type="text" class="form-control" id="textinput" style="background-color: white;" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <button onclick="validcap()" class="btn btn-lg btn-success btn-block">
+                            Submit
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <h4>Developed by Monalisha Bangal</h4>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+
+</body>
+
+</html>
